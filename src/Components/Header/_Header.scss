@@ -1,0 +1,57 @@
+@use "../../Style/Sass/Index" as *;
+.header-top-strip {
+    background-color: $primary;
+    border-bottom: 1px solid $secondary;
+}
+.header-upper {
+    background-color: $primary;
+
+    .input-group-text {
+        background-color: $third;
+    }
+
+    .header-upper-links {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+.header-bottom {
+    background-color: $fourth;
+
+    .menu-links a,
+    .dropdown button {
+        color: white;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+    }
+
+    .dropdown button:focus {
+        box-shadow: none;
+    }
+
+    .dropdown {
+        .dropdown-menu {
+            background-color: $primary;
+            width: 100%;
+            transform: translate3d(0px, 57px, 0px) !important;
+            padding-bottom: 0px;
+
+            .dropdown-item {
+                padding: 20px;
+
+                margin-bottom: 3px;
+                border-bottom: 1px solid $secondary;
+            }
+
+            .dropdown-item:hover {
+                background-color: transparent;
+                color: $third !important;
+            }
+        }
+    }
+}

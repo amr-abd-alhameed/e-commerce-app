@@ -1,0 +1,31 @@
+@use "../../Style/Sass/Color" as *;
+
+footer {
+    background-color: $fourth;
+    .FirstFooter {
+        border-bottom: 1px solid $secondary;
+        .input-group {
+            input {
+                padding: 0.25rem 0.75rem !important;
+            }
+            span {
+                cursor: pointer;
+                // padding: 0.5rem 0.75rem !important;
+                color: white;
+                padding: 8px 17px;
+                background-color: $fourth;
+                text-transform: uppercase;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+                line-height: 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .footerThree {
+        border-top: 1px solid $secondary;
+        .amr {
+            color: $third;
+        }
+    }
+}
