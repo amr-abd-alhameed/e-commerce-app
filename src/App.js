@@ -12,7 +12,7 @@ function App() {
             <>
                 <Router>
                     <Routes>
-                        <Route path="/e-commerce-app" element={<LayOut />}>
+                        <Route path="/e-commerce-app/" element={<LayOut />}>
                             <Route index element={<Home />} />
                             <Route path="about" element={<About />} />
                             <Route path="contact" element={<Contact />} />
