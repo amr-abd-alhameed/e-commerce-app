@@ -8,9 +8,9 @@ import logo2 from "../../../assets/images/alexunder-hess-6zqd6092B1c-unsplash.jp
 const SectionFour = () => {
     return (
         <>
-            <section className="home-wrapper-4">
+            <section className="home-wrapper-4 py-5">
                 <Wrapper className={"g-2"}>
-                    <Title Title={"product"} />
+                    <Title text={"product"} />
                     <ProductCard
                         col={"col-2"}
                         text1={"havells"}

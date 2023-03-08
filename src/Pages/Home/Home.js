@@ -10,6 +10,7 @@ import SectionThree from "./components/SectionThree";
 import MarqueeWrapper from "./components/Marquee";
 import SectionFive from "./components/SectionFive";
 import SectionFour from "./components/SectionFour";
+import FeatureWrapper from "./components/FeatureWrapper";
 const Home = () => {
     return (
         <>
@@ -63,6 +64,7 @@ const Home = () => {
             <SectionTwo />
             <SectionThree />
             <SectionFour />
+            <FeatureWrapper />
             <MarqueeWrapper />
             <SectionFive />
         </>
