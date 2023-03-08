@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Button = ({ name }) => {
+const Button = ({ name, style }) => {
     return (
         <>
-            <Link className="ButtonB text-uppercase" to={"/"}>
+            <Link style={style} className="ButtonB text-uppercase" to={"/"}>
                 {name}
             </Link>
         </>
