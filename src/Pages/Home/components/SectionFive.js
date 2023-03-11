@@ -10,7 +10,7 @@ import Title from "../../../Components/commonComponents/Title";
 const SectionFive = () => {
     return (
         <>
-            <section className="home-wrapper-5 ">
+            <section className="home-wrapper-5 py-5 ">
                 <Wrapper>
                     <Title text={"our latest products "} />
                     <BlogCard col={"col-3"} date={"7 Mar, 2023"} logo={logo1} />
