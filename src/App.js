@@ -5,6 +5,7 @@ import LayOut from "./Components/LayOut";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import OurStore from "./Pages/OurStore/OurStore";
 
 function App() {
     return (
@@ -16,6 +17,10 @@ function App() {
                             <Route index element={<Home />} />
                             <Route path="about" element={<About />} />
                             <Route path="contact" element={<Contact />} />
+                            <Route
+                                path="/e-commerce-app/store"
+                                element={<OurStore />}
+                            />
                         </Route>
                     </Routes>
                 </Router>

@@ -15,8 +15,12 @@ const ThirdHeader = () => {
                                 </div>
                                 <div className="menu-links">
                                     <div className="d-flex d-flex align-items-center gap-15">
-                                        <NavLink to="/">home</NavLink>
-                                        <NavLink to="/">our store</NavLink>
+                                        <NavLink to="/e-commerce-app/">
+                                            home
+                                        </NavLink>
+                                        <NavLink to="/e-commerce-app/store">
+                                            our store
+                                        </NavLink>
                                         <NavLink to="/">blog</NavLink>
                                         <NavLink to="/contact">contact</NavLink>
                                     </div>
