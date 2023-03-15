@@ -7,6 +7,7 @@ import CardLeftOne from "./Components/CardLeftOne";
 import CardLeftThree from "./Components/CardLeftThree";
 import CardLeftTwo from "./Components/CardLeftTwo";
 import logo1 from "../../assets/images/watch.jpg";
+import SearchingArea from "./Components/SearchingArea";
 
 const OurStore = () => {
     return (
@@ -47,6 +48,7 @@ const OurStore = () => {
                             logo1={logo1}
                         />
                     </div>
+                    <SearchingArea />
                 </Wrapper>
             </div>
         </>
