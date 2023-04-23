@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import OurStore from "./Pages/OurStore/OurStore";
+import WishList from "./Components/Header/Components/WishList";
 
 function App() {
     return (
@@ -20,6 +21,10 @@ function App() {
                             <Route
                                 path="/e-commerce-app/store"
                                 element={<OurStore />}
+                            />
+                            <Route
+                                path="/e-commerce-app/store/wishlist"
+                                element={<WishList />}
                             />
                         </Route>
                     </Routes>

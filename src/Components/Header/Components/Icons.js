@@ -18,7 +18,10 @@ const Icons = () => {
                         </Link>
                     </div>
                     <div>
-                        <Link className="d-flex align-items-center gap-10 text-white">
+                        <Link
+                            className="d-flex align-items-center gap-10 text-white"
+                            to={"/e-commerce-app/store/wishlist"}
+                        >
                             <img src={WishList} alt="compare" />
                             <p className="mb-0">
                                 favorite <br /> wish list

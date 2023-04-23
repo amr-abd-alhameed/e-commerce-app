@@ -1,6 +1,8 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import Button from "../../../Components/commonComponents/Button";
+import { useDispatch } from "react-redux";
+import { addToCard } from "../../../Redux/Features/wishListCard";
 
 const SpecialCard = ({
     col,
@@ -13,6 +15,7 @@ const SpecialCard = ({
     days,
     num,
 }) => {
+    const dispatch = useDispatch();
     return (
         <>
             <div className={col}>
@@ -74,6 +77,7 @@ const SpecialCard = ({
                                     padding: "10px ",
                                     fontSize: "10px",
                                 }}
+                                onClick={() => dispatch(addToCard(9))}
                             />
                         </div>
                     </div>
