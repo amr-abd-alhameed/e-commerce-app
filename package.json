@@ -2,7 +2,7 @@
     "name": "ecommerce-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://amr-abd-alhameed.github.io/e-commerce-app",
+    "homepage": "https://amr-abd-alhameed.github.io",
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.3",
         "@testing-library/jest-dom": "^5.16.5",
@@ -19,6 +19,7 @@
         "react-router-dom": "^6.8.1",
         "react-scripts": "5.0.1",
         "sass": "^1.58.3",
+        "shortid": "^2.2.16",
         "web-vitals": "^2.1.4"
     },
     "scripts": {

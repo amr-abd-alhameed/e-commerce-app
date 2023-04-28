@@ -10,7 +10,10 @@ const Icons = () => {
             <div className="col-5">
                 <div className="header-upper-links d-flex justify-content-between align-items-center">
                     <div>
-                        <Link className="d-flex align-items-center gap-10 text-white">
+                        <Link
+                            className="d-flex align-items-center gap-10 text-white"
+                            to={"/compareProducts"}
+                        >
                             <img src={compare} alt="compare" />
                             <p className="mb-0">
                                 compare <br /> products
@@ -20,7 +23,7 @@ const Icons = () => {
                     <div>
                         <Link
                             className="d-flex align-items-center gap-10 text-white"
-                            to={"/e-commerce-app/store/wishlist"}
+                            to={"/wishlist"}
                         >
                             <img src={WishList} alt="compare" />
                             <p className="mb-0">

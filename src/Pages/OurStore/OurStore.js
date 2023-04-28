@@ -8,15 +8,14 @@ import CardLeftThree from "./Components/CardLeftThree";
 import CardLeftTwo from "./Components/CardLeftTwo";
 import logo1 from "../../assets/images/watch.jpg";
 import SearchingArea from "./Components/SearchingArea";
+import BreadCrumb from "../../Components/commonComponents/BreadCrumb";
 
 const OurStore = () => {
     return (
         <>
             <Meta Title={"our store"} />
-            <Title
-                className="text-center mb-0 py-4 "
-                text={"home / our store"}
-            />
+
+            <BreadCrumb title={"store"} />
             <div className="storeWrapper py-5">
                 <Wrapper>
                     <div className="col-3">

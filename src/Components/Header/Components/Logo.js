@@ -5,7 +5,9 @@ const Logo = () => {
         <>
             <div className="col-2">
                 <h2>
-                    <Link className="text-white text-uppercase">dev Amr.</Link>
+                    <Link className="text-white text-uppercase" to={"/"}>
+                        dev Amr.
+                    </Link>
                 </h2>
             </div>
         </>

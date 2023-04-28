@@ -1,15 +1,30 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Photo1 from "../../assets/images/prodcompare.svg";
 import Photo2 from "../../assets/images/view.svg";
 import Photo3 from "../../assets/images/add-cart.svg";
 import logo3 from "../../assets/images/wish.svg";
 
-const ProductCard = ({ col, logo, logo2, text1, text2, price, value }) => {
+const ProductCard = ({
+    col,
+    logo,
+    logo2,
+    text1,
+    text2,
+    price,
+    value,
+    grid,
+}) => {
+    const location = useLocation();
     return (
         <>
-            <div className={col}>
+            {/* <div className={`${location.pathname == "/store" ? col : col} `}> */}
+            <div
+                className={`${
+                    location.pathname == "/store" ? `gr-${grid}` : col
+                } `}
+            >
                 <div className="productCard position-relative">
                     <div className="wishList-icon position-absolute">
                         <Link>

@@ -6,28 +6,36 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import OurStore from "./Pages/OurStore/OurStore";
-import WishList from "./Components/Header/Components/WishList";
+// import WishList from "./Components/Header/Components/WishList";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import CompareProducts from "./Pages/CompareProducts/CompareProducts";
+import WishList from "./Pages/WishList/WishList";
+import LogIn from "./Pages/WishList/LogIn/LogIn";
+import LogOut from "./Pages/LogOut/LogOut";
 
 function App() {
     return (
         <>
             <>
                 <Router>
+                    <Header />
                     <Routes>
-                        <Route path="/e-commerce-app/" element={<LayOut />}>
-                            <Route index element={<Home />} />
-                            <Route path="about" element={<About />} />
-                            <Route path="contact" element={<Contact />} />
-                            <Route
-                                path="/e-commerce-app/store"
-                                element={<OurStore />}
-                            />
-                            <Route
-                                path="/e-commerce-app/store/wishlist"
-                                element={<WishList />}
-                            />
-                        </Route>
+                        {/* <Route path="/" element={<LayOut />}> */}
+                        <Route index element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/store" element={<OurStore />} />
+                        <Route
+                            path="/compareProducts"
+                            element={<CompareProducts />}
+                        />
+                        <Route path="/login" element={<LogIn />} />
+                        <Route path="/logout" element={<LogOut />} />
+                        <Route path="/wishlist" element={<WishList />} />
+                        {/* </Route> */}
                     </Routes>
+                    <Footer />
                 </Router>
             </>
         </>

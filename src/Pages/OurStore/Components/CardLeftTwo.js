@@ -1,5 +1,6 @@
 import React from "react";
 import FilterCardWrapper from "./FilterCardsWrapper";
+import Colors from "../../CompareProducts/Components/Colors";
 
 const CardLeftTwo = ({ title, subTitle1, subTitle2, text1, text2 }) => {
     return (
@@ -52,7 +53,7 @@ const CardLeftTwo = ({ title, subTitle1, subTitle2, text1, text2 }) => {
                     </div>
                     <h5 className="subTitle">colors</h5>
                     <div>
-                        <ul className="colors d-flex flex-wrap gap-10 ps-0">
+                        {/* <ul className="colors d-flex flex-wrap gap-10 ps-0">
                             <li></li>
                             <li></li>
                             <li></li>
@@ -75,7 +76,8 @@ const CardLeftTwo = ({ title, subTitle1, subTitle2, text1, text2 }) => {
                             <li></li>
                             <li></li>
                             <li></li>
-                        </ul>
+                        </ul> */}
+                        <Colors />
                     </div>
                     <h5 className="subTitle">size</h5>
                     <div>

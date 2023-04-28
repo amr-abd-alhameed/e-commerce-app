@@ -1,11 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
-const Button = ({ name, style }) => {
+import { addToCard } from "../../Redux/Features/wishListSlice";
+import { useDispatch } from "react-redux";
+import shortid from "shortid";
+
+const Button = ({ name, style, e, total }) => {
+    const dispatch = useDispatch();
+    const handleToCard = (product) => {
+        dispatch(addToCard(product));
+    };
+    const amr = {
+        key: "value",
+        may: "hey",
+        id: shortid.generate(),
+    };
     return (
         <>
-            <Link style={style} className="ButtonB text-uppercase" to={"/"}>
+            <button
+                onClick={() => handleToCard(total)}
+                style={style}
+                className="ButtonB text-uppercase"
+                key={e}
+            >
                 {name}
-            </Link>
+            </button>
         </>
     );
 };

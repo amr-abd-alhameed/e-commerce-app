@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import wishListCard from "../Redux/Features/wishListCard";
+import wishListSlice from "../Redux/Features/wishListSlice";
 const store = configureStore({
-    reducer: { wishCard: wishListCard },
+    reducer: { wishCard: wishListSlice },
 });
 export default store;
