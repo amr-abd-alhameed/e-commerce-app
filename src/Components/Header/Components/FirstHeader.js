@@ -1,29 +1,28 @@
 import React from "react";
+import Wrapper from "../../commonComponents/Wrapper";
 
 const FirstHeader = () => {
     return (
         <>
             <header className="header-top-strip py-3">
-                <div className="container-xxl">
-                    <div className="row">
-                        <div className="col-6">
-                            <p className="text-white mb-0 text-capitalize">
-                                free shipping Over $100 & free returns
-                            </p>
-                        </div>
-                        <div className="col-6">
-                            <p className="text-end text-white mb-0 text-capitalize">
-                                hotLine :
-                                <a
-                                    className="text-white"
-                                    href="tel:+20 01153928262"
-                                >
-                                    +20 01153298262
-                                </a>
-                            </p>
-                        </div>
+                <Wrapper>
+                    <div className="col-6">
+                        <p className="text-white mb-0 text-capitalize firstHeader">
+                            free shipping Over $100 & free returns
+                        </p>
                     </div>
-                </div>
+                    <div className="col-6">
+                        <p className="text-end text-white mb-0 text-capitalize firstHeader">
+                            hotLine :
+                            <a
+                                className="text-white"
+                                href="tel:+20 01153928262"
+                            >
+                                +20 01153298262
+                            </a>
+                        </p>
+                    </div>
+                </Wrapper>
             </header>
         </>
     );

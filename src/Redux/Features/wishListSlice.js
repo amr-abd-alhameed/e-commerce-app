@@ -10,7 +10,6 @@ const wishListSlice = createSlice({
     initialState,
     reducers: {
         addToCard: (state, action) => {
-            console.log(action.payload.price);
             state.cardQuantity += 1;
             state.cardsPrice = 100 * state.cardQuantity;
             const itemIndex = state.cards.findIndex(
@@ -29,7 +28,32 @@ const wishListSlice = createSlice({
             );
             state.cards = nextCards;
         },
+        increment: (state, action) => {
+            const itemIndex = state.cards.findIndex(
+                (item) => item.id === action.payload.id
+            );
+
+            if (itemIndex >= 0) {
+                // state.cards[itemIndex].cardQuantity += 1;
+                state.cardQuantity += 1;
+                state.cardsPrice = 100 * state.cardQuantity;
+            }
+        },
+        decrement: (state, action) => {
+            const itemIndex = state.cards.findIndex(
+                (item) => item.id === action.payload.id
+            );
+            if (itemIndex >= 0) {
+                // state.cards[itemIndex].cardQuantity += 1;
+                state.cardQuantity -= 1;
+                state.cardsPrice = 100 * state.cardQuantity;
+                if (state.cardQuantity < 0) {
+                    state.cardQuantity = 0;
+                }
+            }
+        },
     },
 });
-export const { addToCard, removeFromCard } = wishListSlice.actions;
+export const { addToCard, removeFromCard, increment, decrement } =
+    wishListSlice.actions;
 export default wishListSlice.reducer;

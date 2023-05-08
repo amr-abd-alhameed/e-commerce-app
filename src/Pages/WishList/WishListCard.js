@@ -15,7 +15,7 @@ const WishListCard = ({ logo1, text2, price, total }) => {
                         onClick={() => dispatch(removeFromCard(total))}
                     />
                     <div className="wishListImage">
-                        <img src={logo1} alt="" />
+                        <img className="img-fluid" src={logo1} alt="" />
                     </div>
                     <div className="py-3 px-3">
                         <h5 className="Title">{text2}</h5>

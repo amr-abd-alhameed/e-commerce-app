@@ -1,6 +1,8 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import Button from "../../../Components/commonComponents/Button";
+import { useDispatch } from "react-redux";
+import { decrement, increment } from "../../../Redux/Features/wishListSlice";
 
 const SpecialCard = ({
     col,
@@ -15,6 +17,7 @@ const SpecialCard = ({
     e,
     total,
 }) => {
+    const dispatch = useDispatch();
     return (
         <>
             <div className={col}>
@@ -79,6 +82,13 @@ const SpecialCard = ({
                                 total={total}
                                 key={e}
                             />
+
+                            <button onClick={() => dispatch(increment(total))}>
+                                increment +++
+                            </button>
+                            <button onClick={() => dispatch(decrement(total))}>
+                                decrement ---
+                            </button>
                         </div>
                     </div>
                 </div>

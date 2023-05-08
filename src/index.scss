@@ -182,6 +182,7 @@ a {
 
 .colors {
     list-style: none;
+    margin-bottom: 0px;
 
     li {
         width: 20px;
@@ -201,6 +202,14 @@ a {
 }
 
 // LogIn
+.link {
+    background-color: rgb(254, 189, 105);
+    color: $primary;
+    &:hover {
+        background-color: $fourth;
+        color: white;
+    }
+}
 .auth-card {
     padding: 20px;
     background-color: white;
@@ -210,17 +219,17 @@ a {
     .sin {
         color: $primary;
     }
-    .link {
-        background-color: rgb(254, 189, 105);
-        color: $primary;
-        &:hover {
-            background-color: $fourth;
-            color: white;
-        }
-    }
+    // .link {
+    //     background-color: rgb(254, 189, 105);
+    //     color: $primary;
+    //     &:hover {
+    //         background-color: $fourth;
+    //         color: white;
+    //     }
+    // }
 
     .one {
-        input {
+        .formControl {
             height: 50px;
             background-color: $sixth;
             font-size: 14px;
@@ -237,5 +246,177 @@ a {
         font-size: 19px;
         font-weight: 500;
         color: $eighth;
+    }
+}
+
+// simple card
+.review-inner-wrapper {
+    background-color: white;
+    padding: 30px;
+    .review-head {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $eighth;
+        h4 {
+            font-size: 18px;
+            color: $primary;
+        }
+        p,
+        a {
+            font-size: 17px;
+            color: $eighth;
+        }
+    }
+    .review-form {
+        .amr {
+            font-size: 17px;
+            color: $eighth;
+        }
+        .text-area:focus {
+            outline: none;
+        }
+    }
+}
+.main-Product-Wrapper {
+    .main-product-image {
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        div {
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            img {
+                width: 100% !important;
+                height: 500px !important;
+                object-fit: cover;
+            }
+        }
+        .js-image-zoom__zoomed-image {
+            left: 230px !important;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+    }
+    .other-product-images {
+        background-color: white;
+        padding: 20px;
+        div {
+            padding: 20px;
+            width: 48%;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+        }
+    }
+    .main-product-details {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        .h3-wrapper {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+            .title {
+                font-size: 18px;
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 10px;
+            }
+            .price {
+                line-height: 20px;
+                font-size: 17px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .product-heading {
+                font-size: 14px;
+                margin-bottom: 0px;
+                color: $primary;
+            }
+            .product-data {
+                font-size: 13px;
+                margin-bottom: 0px;
+                color: $eighth;
+            }
+            .me {
+                font-size: 10px !important;
+                padding: 8px 13px !important;
+                height: 35px !important;
+            }
+            .tt {
+                margin-right: 100px !important;
+            }
+            .mm {
+                font-size: 14px;
+                color: $eighth;
+            }
+        }
+    }
+}
+.review-btn {
+    color: $eighth;
+    font-size: 13;
+}
+// shopping card
+.card-header {
+    border-bottom: 1px solid #eaeaea;
+    h4 {
+        font-size: 13px;
+        color: $eighth;
+    }
+}
+.card-col-1 {
+    width: 40%;
+    p {
+        color: $eighth;
+        font-size: 15px;
+    }
+}
+.card-col-2 {
+    width: 10%;
+    h5 {
+        color: $primary;
+    }
+}
+.card-col-3 {
+    width: 15%;
+}
+.card-col-4 {
+    width: 15%;
+}
+.sass {
+    .boxOne {
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        color: $eighth;
+        .b {
+            border-bottom: 1px solid $eighth !important;
+        }
+        .num {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        button {
+            color: inherit;
+            width: 30px;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            display: block;
+        }
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-container {
+        background-color: black;
+        color: white;
+        width: 40px;
+        border-radius: 50%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
 }

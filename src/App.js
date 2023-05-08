@@ -13,6 +13,8 @@ import CompareProducts from "./Pages/CompareProducts/CompareProducts";
 import WishList from "./Pages/WishList/WishList";
 import LogIn from "./Pages/WishList/LogIn/LogIn";
 import LogOut from "./Pages/LogOut/LogOut";
+import SimpleCard from "./Components/commonComponents/SimpleCard";
+import Shopping from "./Pages/ShoppingCard/Shopping";
 
 function App() {
     return (
@@ -33,6 +35,8 @@ function App() {
                         <Route path="/login" element={<LogIn />} />
                         <Route path="/logout" element={<LogOut />} />
                         <Route path="/wishlist" element={<WishList />} />
+                        <Route path="/simple/:id" element={<SimpleCard />} />
+                        <Route path="/shoppingCard" element={<Shopping />} />
                         {/* </Route> */}
                     </Routes>
                     <Footer />

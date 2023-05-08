@@ -3,7 +3,7 @@ import { addToCard } from "../../Redux/Features/wishListSlice";
 import { useDispatch } from "react-redux";
 import shortid from "shortid";
 
-const Button = ({ name, style, e, total }) => {
+const Button = ({ name, style, e, total, classS }) => {
     const dispatch = useDispatch();
     const handleToCard = (product) => {
         dispatch(addToCard(product));
@@ -18,7 +18,7 @@ const Button = ({ name, style, e, total }) => {
             <button
                 onClick={() => handleToCard(total)}
                 style={style}
-                className="ButtonB text-uppercase"
+                className={`ButtonB text-uppercase ${classS} `}
                 key={e}
             >
                 {name}

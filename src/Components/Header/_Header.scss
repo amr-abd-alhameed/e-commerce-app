@@ -8,6 +8,7 @@
 
     .input-group-text {
         background-color: $third;
+        margin-left: -2px;
     }
 
     .header-upper-links {
@@ -52,6 +53,86 @@
                 background-color: transparent;
                 color: $third !important;
             }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .logoHeader {
+        font-size: 22px;
+    }
+    .input-group {
+        .form-control {
+            height: 45px;
+        }
+    }
+    .header-upper-links {
+        gap: 10px;
+        img {
+            width: 25px !important;
+            height: 25px !important;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .header-upper {
+        .row {
+            flex-direction: column;
+            gap: 25px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+    .header-top-strip {
+        .firstHeader {
+            font-size: 15px;
+        }
+    }
+    .header-upper-links {
+        gap: 10px;
+        img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .menu-bottom {
+        gap: 15px !important;
+    }
+    .menu-links a,
+    .dropdown button {
+        font-size: 12px !important;
+    }
+    .dropdown img {
+        width: 25px;
+    }
+}
+
+@media (max-width: $phone) {
+    .menu-bottom {
+        gap: 0px !important;
+    }
+    .header-top-strip {
+        .firstHeader {
+            font-size: 13px;
+        }
+    }
+    .header-upper-links {
+        gap: 10px;
+        img {
+            width: 25px !important;
+            height: 25px !important;
+        }
+        p {
+            font-size: 14px;
         }
     }
 }

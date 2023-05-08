@@ -5,6 +5,7 @@ import Logo from "./Components/Logo";
 import SearchingFiled from "../commonComponents/SearchingFiled";
 import ThirdHeader from "./Components/ThirdHeader";
 import { BsSearch } from "react-icons/bs";
+import Wrapper from "../commonComponents/Wrapper";
 
 const Header = () => {
     const tee = function icon() {
@@ -19,17 +20,15 @@ const Header = () => {
         <>
             <FirstHeader />
             <header className="header-upper py-3 ">
-                <div className="container-xxl">
-                    <div className="row align-items-center">
-                        <Logo />
-                        <SearchingFiled
-                            col={"col-5"}
-                            placeholder={"search product here ..."}
-                            icon={tee()}
-                        />
-                        <Icons />
-                    </div>
-                </div>
+                <Wrapper className={"align-items-center"}>
+                    <Logo />
+                    <SearchingFiled
+                        // col={"col-5"}
+                        placeholder={"search product here ..."}
+                        icon={tee()}
+                    />
+                    <Icons />
+                </Wrapper>
             </header>
             <ThirdHeader />
         </>

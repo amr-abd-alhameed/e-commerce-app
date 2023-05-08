@@ -26,6 +26,8 @@ const SpecialWrapper = () => {
             num: 9,
             id: shortid.generate(),
             type: "watch",
+            size: "L",
+            color: "golden",
         },
         {
             logo1: logo1,
@@ -39,6 +41,8 @@ const SpecialWrapper = () => {
             num: 9,
             id: shortid.generate(),
             type: "watch",
+            size: "S",
+            color: "silver",
         },
         {
             logo1: logo1,
@@ -52,6 +56,8 @@ const SpecialWrapper = () => {
             num: 9,
             id: shortid.generate(),
             type: "watch",
+            size: "M",
+            color: "red",
         },
     ];
     return (

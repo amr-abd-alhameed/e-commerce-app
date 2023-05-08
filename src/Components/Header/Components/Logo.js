@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 const Logo = () => {
     return (
         <>
-            <div className="col-2">
+            <div className="col-md-2 col-sm-12">
                 <h2>
-                    <Link className="text-white text-uppercase" to={"/"}>
+                    <Link
+                        className="text-white text-uppercase logoHeader"
+                        to={"/"}
+                    >
                         dev Amr.
                     </Link>
                 </h2>

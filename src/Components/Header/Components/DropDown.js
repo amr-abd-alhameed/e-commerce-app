@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "../../..//assets/images/menu.svg";
+import img from "../../../assets/images/menu.svg";
 const DropDown = () => {
     return (
         <>
@@ -13,7 +13,9 @@ const DropDown = () => {
                     aria-expanded="false"
                 >
                     <img src={img} alt="" />
-                    <span className="me-5 d-inline-block">show categories</span>
+                    <span className="me-md-5 me-sm-3  d-inline-block">
+                        show categories
+                    </span>
                 </button>
                 <ul
                     className="dropdown-menu"
