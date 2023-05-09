@@ -93,6 +93,15 @@
 
             div {
                 width: 60%;
+                overflow: hidden;
+            }
+            .image {
+                width: 40%;
+                background-color: white;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
             }
         }
     }
@@ -249,6 +258,34 @@
             }
         }
     }
+    .home-wrapper-3 {
+        .catagories {
+            div {
+                div {
+                    padding: 5px;
+                    h6 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .image {
+                    img {
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+    .home-wrapper-4 {
+        .g-2 {
+            // div{
+
+            // }
+        }
+    }
 }
 @media (max-width: $tablet) {
     .home-wrapper-1 {
@@ -283,6 +320,30 @@
             .last {
                 display: none !important;
             }
+        }
+    }
+    .home-wrapper-3 {
+        .catagories {
+            .gap {
+                padding: 0px;
+            }
+            // div {
+            //     div {
+            //         padding: 5px;
+            //         h6 {
+            //             font-size: 15px;
+            //         }
+
+            //         p {
+            //             font-size: 14px;
+            //         }
+            //     }
+            //     .image {
+            //         img {
+            //             width: 90px;
+            //         }
+            //     }
+            // }
         }
     }
 }
@@ -329,6 +390,30 @@
             }
             p {
                 font-size: 11px;
+            }
+        }
+    }
+    .home-wrapper-3 {
+        .catagories {
+            // .gap {
+            //     padding: 0px;
+            // }
+            div {
+                div {
+                    padding: 5px;
+                    h6 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+                .image {
+                    img {
+                        width: 90px;
+                    }
+                }
             }
         }
     }

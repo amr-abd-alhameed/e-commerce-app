@@ -21,7 +21,7 @@ const ProductCard = ({
         <>
             {/* <div className={`${location.pathname == "/store" ? col : col} `}> */}
             <div
-                className={`${
+                className={` ${
                     location.pathname == "/store" ? `gr-${grid}` : col
                 } `}
             >

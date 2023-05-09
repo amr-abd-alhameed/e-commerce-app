@@ -5,7 +5,7 @@ const Title = ({ text, className }) => {
         <>
             <div className="col-12">
                 <h3 className={`sectionHeading text-capitalize ${className}`}>
-                    {text}{" "}
+                    {text}
                 </h3>
             </div>
         </>

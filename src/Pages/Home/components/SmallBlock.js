@@ -22,7 +22,9 @@ const SmallBlockTwo = ({ logo, alt, title, text }) => {
                     <h6 className="text-capitalize">{title}</h6>
                     <p className="text-capitalize">{text}</p>
                 </div>
-                <img src={logo} alt={alt} />
+                <div className="image">
+                    <img src={logo} alt={alt} />
+                </div>
             </div>
         </>
     );
