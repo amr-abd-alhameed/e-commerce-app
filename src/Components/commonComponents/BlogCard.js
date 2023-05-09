@@ -10,7 +10,7 @@ const BlogCard = ({ col, logo, date }) => {
                         <img src={logo} alt="BLOG" className="img-fluid" />
                     </div>
                     <div className="blogContent">
-                        <p className="date">{date}</p>
+                        <p className="data">{date}</p>
                         <h5 className="title">
                             a beautiful sunday morning renaissance
                         </h5>

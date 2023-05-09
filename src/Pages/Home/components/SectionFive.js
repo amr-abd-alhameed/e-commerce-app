@@ -13,10 +13,26 @@ const SectionFive = () => {
             <section className="home-wrapper-5 py-5 ">
                 <Wrapper>
                     <Title text={"our latest products "} />
-                    <BlogCard col={"col-3"} date={"7 Mar, 2023"} logo={logo1} />
-                    <BlogCard col={"col-3"} date={"7 Mar, 2023"} logo={logo2} />
-                    <BlogCard col={"col-3"} date={"7 Mar, 2023"} logo={logo3} />
-                    <BlogCard col={"col-3"} date={"7 Mar, 2023"} logo={logo4} />
+                    <BlogCard
+                        col={"col-md-4 col-sm-6 col-lg-3"}
+                        date={"7 Mar, 2023"}
+                        logo={logo1}
+                    />
+                    <BlogCard
+                        col={"col-md-4 col-sm-6 col-lg-3"}
+                        date={"7 Mar, 2023"}
+                        logo={logo2}
+                    />
+                    <BlogCard
+                        col={"col-md-4 col-sm-6 col-lg-3"}
+                        date={"7 Mar, 2023"}
+                        logo={logo3}
+                    />
+                    <BlogCard
+                        col={"col-md-4 col-sm-6 col-lg-3"}
+                        date={"7 Mar, 2023"}
+                        logo={logo4}
+                    />
                 </Wrapper>
             </section>
         </>

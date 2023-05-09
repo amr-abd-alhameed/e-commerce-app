@@ -22,7 +22,7 @@ const SpecialCard = ({
         <>
             <div className={col}>
                 <div className="specialCard">
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-lg-between justify-content-sm-start">
                         <div>
                             <img src={logo1} className="img-fluid" alt="" />
                         </div>
@@ -82,13 +82,6 @@ const SpecialCard = ({
                                 total={total}
                                 key={e}
                             />
-
-                            <button onClick={() => dispatch(increment(total))}>
-                                increment +++
-                            </button>
-                            <button onClick={() => dispatch(decrement(total))}>
-                                decrement ---
-                            </button>
                         </div>
                     </div>
                 </div>

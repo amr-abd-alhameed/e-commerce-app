@@ -16,7 +16,7 @@ const PopularCardTwo = ({ col, h5, h3, text1, text2, logo }) => {
         <>
             <div className={col}>
                 <div className="parent">
-                    <h5 className="text-uppercase">{h5}</h5>
+                    <h5 className="text-uppercase ">{h5}</h5>
                     <h3 className="text-uppercase">{h3}</h3>
                     <p className="text-uppercase">
                         {text1}

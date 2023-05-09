@@ -280,10 +280,90 @@
         }
     }
     .home-wrapper-4 {
-        .g-2 {
-            // div{
-
-            // }
+        .productCard {
+            .productImage {
+                height: auto !important;
+                margin-bottom: 30px;
+                // height: 270px;
+            }
+            .productDetails {
+                h6 {
+                    font-size: 20px;
+                }
+                h5,
+                p {
+                    font-size: 18px;
+                }
+                div div span {
+                    font-size: 30px !important;
+                }
+            }
+        }
+    }
+    .popularWrapper {
+        .productCard {
+            .productImage {
+                height: auto !important;
+                margin-bottom: 30px;
+            }
+            .productDetails {
+                h6 {
+                    font-size: 20px;
+                }
+                h5,
+                p {
+                    font-size: 18px;
+                }
+                div div span {
+                    font-size: 30px !important;
+                }
+            }
+        }
+        .one .parent {
+            span {
+                font-size: 20px;
+            }
+            img {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+        .two {
+            .parent {
+                h5 {
+                    font-size: 20px;
+                }
+                h3 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .home-wrapper-5 {
+        .blogCard {
+            .cardImage {
+                img {
+                    width: 100%;
+                }
+            }
+            .blogContent {
+                .data {
+                    font-size: 16px;
+                }
+                h5 {
+                    font-size: 22px;
+                }
+                .desc {
+                    font-size: 15px;
+                }
+            }
         }
     }
 }
@@ -413,6 +493,21 @@
                     img {
                         width: 90px;
                     }
+                }
+            }
+        }
+    }
+    .home-wrapper-5 {
+        .blogCard {
+            .blogContent {
+                .data {
+                    font-size: 18px;
+                }
+                h5 {
+                    font-size: 23px;
+                }
+                .desc {
+                    font-size: 17px;
                 }
             }
         }

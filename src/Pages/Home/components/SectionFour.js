@@ -2,76 +2,76 @@ import React from "react";
 import ProductCard from "../../../Components/commonComponents/ProductCard";
 import Title from "../../../Components/commonComponents/Title";
 import Wrapper from "../../../Components/commonComponents/Wrapper";
-import logo1 from "../../../assets/images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg";
-import logo2 from "../../../assets/images/alexunder-hess-6zqd6092B1c-unsplash.jpg";
+import image1 from "../../../assets/images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg";
+import image2 from "../../../assets/images/alexunder-hess-6zqd6092B1c-unsplash.jpg";
 import shortid from "shortid";
 
 const SectionFour = () => {
     const productCardData = [
         {
-            col: "col-2",
+            col: "col-md-4 col-sm-6 col-lg-2 ",
             text1: "havells",
             text2: "kids headphones bulk 10 back multi colored for ...",
             price: "$99.00",
             value: 3,
-            logo: { logo1 },
-            logo2: { logo2 },
-            id: shortid.generate,
+            logo: image1,
+            logo2: image2,
+            id: shortid.generate(),
             type: true,
         },
         {
-            col: "col-2",
+            col: "col-md-4 col-sm-6 col-lg-2",
             text1: "havells",
             text2: "kids headphones bulk 10 back multi colored for ...",
             price: "$99.00",
             value: 3,
-            logo: { logo1 },
-            logo2: { logo2 },
-            id: shortid.generate,
+            logo: image1,
+            logo2: image2,
+            id: shortid.generate(),
             type: true,
         },
         {
-            col: "col-2",
+            col: "col-md-4 col-sm-6 col-lg-2",
             text1: "havells",
             text2: "kids headphones bulk 10 back multi colored for ...",
             price: "$99.00",
             value: 3,
-            logo: { logo1 },
-            logo2: { logo2 },
-            id: shortid.generate,
+            logo: image1,
+            logo2: image2,
+            id: shortid.generate(),
             type: true,
         },
         {
-            col: "col-2",
+            col: "col-md-4 col-sm-6 col-lg-2",
             text1: "havells",
             text2: "kids headphones bulk 10 back multi colored for ...",
             price: "$99.00",
             value: 3,
-            logo: { logo1 },
-            logo2: { logo2 },
-            id: shortid.generate,
+            logo: image1,
+            logo2: image2,
+            id: shortid.generate(),
             type: true,
         },
         {
-            col: "col-2",
+            col: "col-md-4 col-sm-6 col-lg-2",
             text1: "havells",
             text2: "kids headphones bulk 10 back multi colored for ...",
             price: "$99.00",
             value: 3,
-            logo: { logo1 },
-            logo2: { logo2 },
-            id: shortid.generate,
+            logo: image1,
+            logo2: image2,
+            id: shortid.generate(),
             type: true,
         },
         {
-            col: "col-2",
+            col: "col-md-4 col-sm-6 col-lg-2",
             text1: "havells",
             text2: "kids headphones bulk 10 back multi colored for ...",
             price: "$99.00",
             value: 3,
-            logo: { logo1 },
-            logo2: { logo2 },
-            id: shortid.generate,
+            logo: image1,
+            logo2: image2,
+            id: shortid.generate(),
             type: true,
         },
     ];
@@ -98,7 +98,7 @@ const SectionFour = () => {
                                 col={col}
                                 price={price}
                                 value={value}
-                                logo={logo1}
+                                logo1={logo}
                                 logo2={logo2}
                             />
                         )

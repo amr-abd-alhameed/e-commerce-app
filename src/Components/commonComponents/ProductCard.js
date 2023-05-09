@@ -8,7 +8,7 @@ import logo3 from "../../assets/images/wish.svg";
 
 const ProductCard = ({
     col,
-    logo,
+    logo1,
     logo2,
     text1,
     text2,
@@ -21,7 +21,7 @@ const ProductCard = ({
         <>
             {/* <div className={`${location.pathname == "/store" ? col : col} `}> */}
             <div
-                className={` ${
+                className={`card--product ${
                     location.pathname == "/store" ? `gr-${grid}` : col
                 } `}
             >
@@ -32,7 +32,7 @@ const ProductCard = ({
                         </Link>
                     </div>
                     <div className="productImage">
-                        <img src={logo} alt="" className="img-fluid" />
+                        <img src={logo1} alt="" className="img-fluid" />
                         <img src={logo2} alt="" className="img-fluid" />
                     </div>
                     <div className="productDetails">

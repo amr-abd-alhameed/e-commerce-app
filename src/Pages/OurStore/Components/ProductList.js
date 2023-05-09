@@ -16,7 +16,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -28,7 +28,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -40,7 +40,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -52,7 +52,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -64,7 +64,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -76,7 +76,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -88,7 +88,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                     <ProductCard
@@ -100,7 +100,7 @@ const ProductList = ({ grid }) => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo1}
+                        logo1={logo1}
                         logo2={logo2}
                     />
                 </div>

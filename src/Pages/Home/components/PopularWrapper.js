@@ -16,14 +16,14 @@ const PopularWrapper = () => {
                 <Wrapper>
                     <Title text={"our popular products"} />
                 </Wrapper>
-                <Wrapper>
-                    <div className="col-2 one d-flex flex-column gap-15">
+                <Wrapper className={"g-3"}>
+                    <div className="col-md-4 col-sm-6 col-lg-2 one d-flex flex-column gap-15">
                         <PopularCardOne text={"laptop"} logo={logo3} />
                         <PopularCardOne text={"speaker"} logo={logo2} />
                         <PopularCardOne text={"watch"} logo={logo1} />
                     </div>
                     <PopularCardTwo
-                        col={"col-2 two"}
+                        col={"col-md-4 col-sm-6 col-lg-2 two"}
                         h5={"15% off"}
                         h3={"home speakers"}
                         text1={"from $399 or$16.62/mo."}
@@ -31,47 +31,47 @@ const PopularWrapper = () => {
                         logo={logo2}
                     />
                     <ProductCard
-                        col={"col-2"}
+                        col={"col-md-4 col-sm-6 col-lg-2"}
                         text1={"havells"}
                         text2={
                             "kids headphones bulk 10 back multi colored for ..."
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
-                        col={"col-2"}
+                        col={"col-md-4 col-sm-6 col-lg-2"}
                         text1={"havells"}
                         text2={
                             "kids headphones bulk 10 back multi colored for ..."
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
-                        col={"col-2"}
+                        col={"col-md-4 col-sm-6 col-lg-2"}
                         text1={"havells"}
                         text2={
                             "kids headphones bulk 10 back multi colored for ..."
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
-                        col={"col-2"}
+                        col={"col-md-4 col-sm-6 col-lg-2"}
                         text1={"havells"}
                         text2={
                             "kids headphones bulk 10 back multi colored for ..."
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                 </Wrapper>

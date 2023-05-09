@@ -123,8 +123,10 @@ a {
 
     .productImage {
         height: 270px;
+        transition: 0.3s;
 
         & img {
+            transition: 0.3s;
             object-fit: contain;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
