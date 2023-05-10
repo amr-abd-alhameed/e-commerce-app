@@ -12,11 +12,14 @@ import ReactImageZoom from "react-image-zoom";
 import Colors from "../../Pages/CompareProducts/Components/Colors";
 import { BiGitCompare } from "react-icons/bi";
 import { GiShoppingBag } from "react-icons/gi";
+import { useSelector } from "react-redux";
 
 const SimpleCard = () => {
     const props = { width: 600, height: 500, zoomWidth: 500, img: `${logo4}` };
 
     const [order, setOrder] = useState(true);
+    const selector = useSelector((state) => state.wishCard.cards);
+
     return (
         <>
             <Meta Title={"Product Details "} />
@@ -268,7 +271,7 @@ const SimpleCard = () => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
@@ -279,7 +282,7 @@ const SimpleCard = () => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
@@ -290,7 +293,7 @@ const SimpleCard = () => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
@@ -301,7 +304,7 @@ const SimpleCard = () => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
@@ -312,7 +315,7 @@ const SimpleCard = () => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                     <ProductCard
@@ -323,7 +326,7 @@ const SimpleCard = () => {
                         }
                         price={"$99.00"}
                         value={3}
-                        logo={logo4}
+                        logo1={logo4}
                         logo2={logo5}
                     />
                 </Wrapper>

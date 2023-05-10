@@ -6,19 +6,19 @@ import Wrapper from "../../Components/commonComponents/Wrapper";
 import CompareProductCard from "./Components/CompareProductCard";
 import { useSelector } from "react-redux";
 const CompareProducts = () => {
-    const sellector = useSelector((state) => state.wishCard.cards);
+    const selector = useSelector((state) => state.wishCard.cards);
 
     return (
         <>
             <Meta Title={"Compare Products"} />
             <BreadCrumb title={"Compare Products"} />
-            <Wrapper>
-                {sellector == "" ? (
+            <Wrapper className={"g-3"}>
+                {selector == "" ? (
                     <p className="text-center text-capitalize">
                         there isn't items Compare Page in try to add more
                     </p>
                 ) : (
-                    sellector.map((e) => (
+                    selector.map((e) => (
                         <CompareProductCard
                             key={e.id}
                             logo1={e.logo1}

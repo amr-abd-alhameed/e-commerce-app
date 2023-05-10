@@ -13,7 +13,7 @@ const WishList = () => {
             <Meta Title={"WishList Page"} />
             <BreadCrumb title={"WishList Page"} />
             <div className="wishList-wrapper home-wrapper-2 py-5">
-                <Wrapper className={"g-2"}>
+                <Wrapper className={"g-3"}>
                     {selector == "" ? (
                         <p className="text-center text-capitalize">
                             there isn't items in wishlist page try to add more

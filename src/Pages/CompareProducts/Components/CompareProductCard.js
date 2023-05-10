@@ -7,7 +7,7 @@ const CompareProductCard = ({ logo1, text2, text1, type, num, total }) => {
     const dispatch = useDispatch();
     return (
         <>
-            <div className="col-3">
+            <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="compareProductCard position-relative">
                     <img
                         className="cross position-absolute img-fluid"
