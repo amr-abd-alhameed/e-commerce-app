@@ -13,12 +13,16 @@ import Colors from "../../Pages/CompareProducts/Components/Colors";
 import { BiGitCompare } from "react-icons/bi";
 import { GiShoppingBag } from "react-icons/gi";
 import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 
 const SimpleCard = () => {
     const props = { width: 600, height: 500, zoomWidth: 500, img: `${logo4}` };
 
     const [order, setOrder] = useState(true);
     const selector = useSelector((state) => state.wishCard.cards);
+    const param = useParams();
+    const itemId = param.itemId;
+    console.log(itemId);
 
     return (
         <>

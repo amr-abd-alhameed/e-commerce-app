@@ -1,8 +1,9 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import Button from "../../../Components/commonComponents/Button";
+import Button, { ButtonTwo } from "../../../Components/commonComponents/Button";
 import { useDispatch } from "react-redux";
 import { decrement, increment } from "../../../Redux/Features/wishListSlice";
+import { useParams } from "react-router-dom";
 
 const SpecialCard = ({
     col,
@@ -18,6 +19,9 @@ const SpecialCard = ({
     total,
 }) => {
     const dispatch = useDispatch();
+    // const param = useParams();
+    // const itemId = param.itemId;
+    // console.log(itemId);
     return (
         <>
             <div className={col}>
@@ -73,15 +77,26 @@ const SpecialCard = ({
                                     ></div>
                                 </div>
                             </div>
-                            <Button
-                                name={"add to card"}
-                                style={{
-                                    padding: "10px ",
-                                    fontSize: "10px",
-                                }}
-                                total={total}
-                                key={e}
-                            />
+                            <div className="d-flex gap-15">
+                                <Button
+                                    name={"add to card"}
+                                    style={{
+                                        padding: "10px ",
+                                        fontSize: "10px",
+                                    }}
+                                    total={total}
+                                    key={num}
+                                />
+                                <ButtonTwo
+                                    style={{
+                                        padding: "10px ",
+                                        fontSize: "10px",
+                                    }}
+                                    name={"more info"}
+                                    total={total}
+                                    key={e}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
