@@ -8,98 +8,98 @@ import shortid from "shortid";
 import { sectionFourData } from "../../../Components/commonComponents/Data";
 
 const SectionFour = () => {
-    const productCardData = [
-        {
-            col: "col-md-4 col-sm-6 col-lg-2 ",
-            text1: "havells",
-            text2: "kids headphones bulk 10 back multi colored for ...",
-            price: "$99.00",
-            value: 3,
-            logo: image1,
-            logo2: image2,
-            id: shortid.generate(),
-            type: true,
-        },
-        {
-            col: "col-md-4 col-sm-6 col-lg-2",
-            text1: "havells",
-            text2: "kids headphones bulk 10 back multi colored for ...",
-            price: "$99.00",
-            value: 3,
-            logo: image1,
-            logo2: image2,
-            id: shortid.generate(),
-            type: true,
-        },
-        {
-            col: "col-md-4 col-sm-6 col-lg-2",
-            text1: "havells",
-            text2: "kids headphones bulk 10 back multi colored for ...",
-            price: "$99.00",
-            value: 3,
-            logo: image1,
-            logo2: image2,
-            id: shortid.generate(),
-            type: true,
-        },
-        {
-            col: "col-md-4 col-sm-6 col-lg-2",
-            text1: "havells",
-            text2: "kids headphones bulk 10 back multi colored for ...",
-            price: "$99.00",
-            value: 3,
-            logo: image1,
-            logo2: image2,
-            id: shortid.generate(),
-            type: true,
-        },
-        {
-            col: "col-md-4 col-sm-6 col-lg-2",
-            text1: "havells",
-            text2: "kids headphones bulk 10 back multi colored for ...",
-            price: "$99.00",
-            value: 3,
-            logo: image1,
-            logo2: image2,
-            id: shortid.generate(),
-            type: true,
-        },
-        {
-            col: "col-md-4 col-sm-6 col-lg-2",
-            text1: "havells",
-            text2: "kids headphones bulk 10 back multi colored for ...",
-            price: "$99.00",
-            value: 3,
-            logo: image1,
-            logo2: image2,
-            id: shortid.generate(),
-            type: true,
-        },
-    ];
+    // const productCardData = [
+    //     {
+    //         col: "col-md-4 col-sm-6 col-lg-2 ",
+    //         text1: "havells",
+    //         text2: "kids headphones bulk 10 back multi colored for ...",
+    //         price: "$99.00",
+    //         value: 3,
+    //         logo: image1,
+    //         logo2: image2,
+    //         id: shortid.generate(),
+    //         type: true,
+    //     },
+    //     {
+    //         col: "col-md-4 col-sm-6 col-lg-2",
+    //         text1: "havells",
+    //         text2: "kids headphones bulk 10 back multi colored for ...",
+    //         price: "$99.00",
+    //         value: 3,
+    //         logo: image1,
+    //         logo2: image2,
+    //         id: shortid.generate(),
+    //         type: true,
+    //     },
+    //     {
+    //         col: "col-md-4 col-sm-6 col-lg-2",
+    //         text1: "havells",
+    //         text2: "kids headphones bulk 10 back multi colored for ...",
+    //         price: "$99.00",
+    //         value: 3,
+    //         logo: image1,
+    //         logo2: image2,
+    //         id: shortid.generate(),
+    //         type: true,
+    //     },
+    //     {
+    //         col: "col-md-4 col-sm-6 col-lg-2",
+    //         text1: "havells",
+    //         text2: "kids headphones bulk 10 back multi colored for ...",
+    //         price: "$99.00",
+    //         value: 3,
+    //         logo: image1,
+    //         logo2: image2,
+    //         id: shortid.generate(),
+    //         type: true,
+    //     },
+    //     {
+    //         col: "col-md-4 col-sm-6 col-lg-2",
+    //         text1: "havells",
+    //         text2: "kids headphones bulk 10 back multi colored for ...",
+    //         price: "$99.00",
+    //         value: 3,
+    //         logo: image1,
+    //         logo2: image2,
+    //         id: shortid.generate(),
+    //         type: true,
+    //     },
+    //     {
+    //         col: "col-md-4 col-sm-6 col-lg-2",
+    //         text1: "havells",
+    //         text2: "kids headphones bulk 10 back multi colored for ...",
+    //         price: "$99.00",
+    //         value: 3,
+    //         logo: image1,
+    //         logo2: image2,
+    //         id: shortid.generate(),
+    //         type: true,
+    //     },
+    // ];
     return (
         <>
             <section className="home-wrapper-4 py-5">
                 <Wrapper className={"g-2"}>
                     <Title text={"product"} />
-                    {productCardData.map(
+                    {sectionFourData.map(
                         ({
                             col,
-                            text1,
-                            text2,
+                            brand,
+                            title,
                             price,
                             value,
-                            logo,
+                            logo1,
                             logo2,
                             id,
                         }) => (
                             <ProductCard
                                 key={id}
-                                text1={text1}
-                                text2={text2}
+                                text1={brand}
+                                text2={title}
                                 col={col}
                                 price={price}
                                 value={value}
-                                logo1={logo}
+                                logo1={logo1}
                                 logo2={logo2}
                             />
                         )

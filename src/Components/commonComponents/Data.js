@@ -1,6 +1,8 @@
 //  import img1 from "../../assets"
 import img1 from "../../assets/images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg";
 import img2 from "../../assets/images/alexunder-hess-6zqd6092B1c-unsplash.jpg";
+import img3 from "../../assets/images/watch.jpg";
+
 import shortid from "shortid";
 export const sectionFourData = [
     {
@@ -140,5 +142,91 @@ export const sectionFourData = [
         ],
         availability: "in stock",
         quantity: "22 items",
+    },
+];
+export const sectionSpecialData = [
+    {
+        col: "col-lg-4 col-sm-12",
+        brand: "diamond",
+        title: "a beautiful company for watches guys",
+        price1: "$100",
+        price2: "$200",
+        days: 5,
+        num: 9,
+        size: "L",
+        color: "golden",
+        value: 3,
+        logo1: img3,
+
+        id: shortid.generate(),
+        type: "watch",
+        category: "watches",
+        tag: [
+            {
+                kind1: "watches",
+                kind2: "smart watches",
+                kind3: "sports watches",
+                kind4: "classic watches",
+                kind5: "smart band",
+            },
+        ],
+        availability: "in stock",
+        quantity: "30 items",
+    },
+    {
+        col: "col-lg-4 col-sm-12",
+        brand: "diamond",
+        title: "a beautiful company for watches guys",
+        price1: "$100",
+        price2: "$200",
+        days: 5,
+        num: 9,
+        size: "L",
+        color: "golden",
+        value: 3,
+        logo1: img3,
+
+        id: shortid.generate(),
+        type: "watch",
+        category: "watches",
+        tag: [
+            {
+                kind1: "watches",
+                kind2: "smart watches",
+                kind3: "sports watches",
+                kind4: "classic watches",
+                kind5: "smart band",
+            },
+        ],
+        availability: "in stock",
+        quantity: "30 items",
+    },
+    {
+        col: "col-lg-4 col-sm-12",
+        brand: "diamond",
+        title: "a beautiful company for watches guys",
+        price1: "$100",
+        price2: "$200",
+        days: 5,
+        num: 9,
+        size: "L",
+        color: "golden",
+        value: 3,
+        logo1: img3,
+
+        id: shortid.generate(),
+        type: "watch",
+        category: "watches",
+        tag: [
+            {
+                kind1: "watches",
+                kind2: "smart watches",
+                kind3: "sports watches",
+                kind4: "classic watches",
+                kind5: "smart band",
+            },
+        ],
+        availability: "in stock",
+        quantity: "30 items",
     },
 ];

@@ -8,6 +8,7 @@ import logo3 from "../../../assets/images/watch.jpg";
 import ProductCard from "../../../Components/commonComponents/ProductCard";
 import logo4 from "../../../assets/images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg";
 import logo5 from "../../../assets/images/alexunder-hess-6zqd6092B1c-unsplash.jpg";
+import { sectionFourData } from "../../../Components/commonComponents/Data";
 
 const PopularWrapper = () => {
     return (
@@ -30,7 +31,32 @@ const PopularWrapper = () => {
                         text2={"for 24 mo."}
                         logo={logo2}
                     />
-                    <ProductCard
+                    {sectionFourData
+                        .slice(0, 4)
+                        .map(
+                            ({
+                                col,
+                                brand,
+                                title,
+                                price,
+                                value,
+                                logo1,
+                                logo2,
+                                id,
+                            }) => (
+                                <ProductCard
+                                    key={id}
+                                    text1={brand}
+                                    text2={title}
+                                    col={col}
+                                    price={price}
+                                    value={value}
+                                    logo1={logo1}
+                                    logo2={logo2}
+                                />
+                            )
+                        )}
+                    {/* <ProductCard
                         col={"col-md-4 col-sm-6 col-lg-2"}
                         text1={"havells"}
                         text2={
@@ -73,7 +99,7 @@ const PopularWrapper = () => {
                         value={3}
                         logo1={logo4}
                         logo2={logo5}
-                    />
+                    /> */}
                 </Wrapper>
             </div>
         </>
