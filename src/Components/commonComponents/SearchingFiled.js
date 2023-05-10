@@ -3,7 +3,7 @@ import React from "react";
 const SearchingFiled = ({ col, placeholder, icon, text }) => {
     return (
         <>
-            <div className="col-md-4 col-lg-5">
+            <div className={` ${col ? col : "col-md-4 col-lg-5"}`}>
                 <div className="input-group ">
                     <input
                         type="text"

@@ -1,4 +1,4 @@
-@use "../../Style/Sass/Color" as *;
+@use "../../Style/Sass/Index" as *;
 
 footer {
     background-color: $fourth;
@@ -26,6 +26,67 @@ footer {
         border-top: 1px solid $secondary;
         .amr {
             color: $third;
+        }
+    }
+}
+@media (max-width: $lg) {
+    footer {
+        .FirstFooter {
+            .footer-top-data {
+                h2 {
+                    font-size: 25px !important;
+                }
+                img {
+                }
+            }
+        }
+        .secondFooter {
+            .row {
+                justify-content: space-between;
+                row-gap: 30px;
+            }
+            // h4 {
+            //     font-size: 20px;
+            // }
+            // address,
+            // a {
+            //     font-size: 15px;
+            // }
+        }
+    }
+}
+@media (max-width: $tablet) {
+    footer {
+        .FirstFooter {
+            .footer-top-data {
+                h2 {
+                    font-size: 19px !important;
+                }
+                img {
+                    width: 25px;
+                }
+            }
+        }
+        .secondFooter {
+            // h4 {
+            //     font-size: 18px;
+            // }
+            // address,
+            // a {
+            //     font-size: 13px;
+            // }
+        }
+    }
+}
+@media (max-width: $phone) {
+    footer {
+        .secondFooter {
+            div:nth-child(1) {
+                text-align: center;
+            }
+            .socialIcons {
+                justify-content: center;
+            }
         }
     }
 }

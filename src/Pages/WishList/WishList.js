@@ -13,26 +13,22 @@ const WishList = () => {
             <Meta Title={"WishList Page"} />
             <BreadCrumb title={"WishList Page"} />
             <div className="wishList-wrapper home-wrapper-2 py-5">
-                <Wrapper>
-                    <div className="d-flex flex-wrap gap-15">
-                        {" "}
-                        {selector == "" ? (
-                            <p className="text-center text-capitalize">
-                                there isn't items in wishlist page try to add
-                                more
-                            </p>
-                        ) : (
-                            selector.map((e) => (
-                                <WishListCard
-                                    key={e.id}
-                                    logo1={e.logo1}
-                                    text2={e.text2}
-                                    price={e.price}
-                                    total={e}
-                                />
-                            ))
-                        )}
-                    </div>
+                <Wrapper className={"g-2"}>
+                    {selector == "" ? (
+                        <p className="text-center text-capitalize">
+                            there isn't items in wishlist page try to add more
+                        </p>
+                    ) : (
+                        selector.map((e) => (
+                            <WishListCard
+                                key={e.id}
+                                logo1={e.logo1}
+                                text2={e.text2}
+                                price={e.price}
+                                total={e}
+                            />
+                        ))
+                    )}
 
                     {/* {sellector !== "" ? (
                         sellector.map((e) => (
