@@ -5,6 +5,7 @@ import Wrapper from "../../../Components/commonComponents/Wrapper";
 import image1 from "../../../assets/images/alexunder-hess-bWZAPKm0zZE-unsplash.jpg";
 import image2 from "../../../assets/images/alexunder-hess-6zqd6092B1c-unsplash.jpg";
 import shortid from "shortid";
+import { sectionFourData } from "../../../Components/commonComponents/Data";
 
 const SectionFour = () => {
     const productCardData = [
