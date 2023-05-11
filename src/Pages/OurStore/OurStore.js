@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Meta from "../../Components/commonComponents/Meta";
 import Title from "../../Components/commonComponents/Title";
 import Wrapper from "../../Components/commonComponents/Wrapper";
@@ -9,8 +9,10 @@ import CardLeftTwo from "./Components/CardLeftTwo";
 import logo1 from "../../assets/images/watch.jpg";
 import SearchingArea from "./Components/SearchingArea";
 import BreadCrumb from "../../Components/commonComponents/BreadCrumb";
+import { BsFilterRight } from "react-icons/bs";
 
 const OurStore = () => {
+    const [value, setValue] = useState(false);
     return (
         <>
             <Meta Title={"our store"} />
@@ -18,7 +20,10 @@ const OurStore = () => {
             <BreadCrumb title={"store"} />
             <div className="storeWrapper py-5">
                 <Wrapper>
-                    <div className="col-3">
+                    <div
+                        className="col-sm-3 cola"
+                        style={{ display: `${value ? "block" : ""}` }}
+                    >
                         <CardLeftOne
                             title={"shop by categories"}
                             text1={"watch"}
@@ -47,7 +52,8 @@ const OurStore = () => {
                             logo1={logo1}
                         />
                     </div>
-                    <SearchingArea />
+
+                    <SearchingArea setValue={setValue} />
                 </Wrapper>
             </div>
         </>

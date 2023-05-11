@@ -5,17 +5,18 @@ import logo2 from "../../../assets/images/gr2.svg";
 import logo3 from "../../../assets/images/gr3.svg";
 import logo4 from "../../../assets/images/gr4.svg";
 import ProductList from "./ProductList";
+import { BsFillFilterSquareFill } from "react-icons/bs";
 
-const SearchingArea = () => {
+const SearchingArea = ({ setValue }) => {
     const [grid, setGrid] = useState(4);
     return (
         <>
-            <div className="col-9">
+            <div className="col-sm-9 col-12">
                 <div className="filter-sort-grid mb-3">
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center gap-10">
                             <p
-                                className="mb-0 text-capitalize d-block"
+                                className="mb-0 text-capitalize d-block sorta"
                                 style={{ width: "32%" }}
                             >
                                 sort by:
@@ -51,6 +52,17 @@ const SearchingArea = () => {
                                 />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="colaTwo d-flex d-sm-none ">
+                    <div
+                        className="gap-10 d-flex"
+                        onClick={() => setValue((prevState) => !prevState)}
+                    >
+                        <p>
+                            <BsFillFilterSquareFill className="fs-4" />
+                        </p>
+                        <p>show filter</p>
                     </div>
                 </div>
                 <ProductList grid={grid} />
