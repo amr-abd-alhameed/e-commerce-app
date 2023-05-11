@@ -35,8 +35,8 @@ const Shopping = () => {
                                 <ShoppingCard
                                     key={e.id}
                                     logo1={e.logo1}
-                                    text2={e.text2}
-                                    price={e.price}
+                                    text2={e.title}
+                                    price={e.price1}
                                     total={e}
                                     size={e.size}
                                     color={e.color}

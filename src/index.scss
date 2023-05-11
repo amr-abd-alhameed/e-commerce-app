@@ -375,13 +375,14 @@ a {
     width: 10%;
     h5 {
         color: $primary;
+        text-align: center;
     }
 }
 .card-col-3 {
-    width: 15%;
+    width: 20%;
 }
 .card-col-4 {
-    width: 15%;
+    width: 10%;
 }
 .sass {
     .boxOne {
@@ -411,14 +412,60 @@ a {
     }
 
     .icon-container {
-        background-color: black;
+        background-color: $eighth;
         color: white;
         width: 40px;
-        border-radius: 50%;
+        border-radius: 17%;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+    }
+}
+@media (max-width: $tablet) {
+    .card-col-1 {
+        width: 50%;
+        .w-25 {
+            width: 40% !important;
+        }
+        .w-75 {
+            width: 60% !important;
+        }
+    }
+    .card-col-2 {
+        width: 13%;
+    }
+    .card-col-3 {
+        width: 22%;
+
+        .gap-30 {
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: $phone) {
+    .card-col-1 {
+        width: 40%;
+    }
+    .card-details {
+        p {
+            font-size: 12px;
+        }
+        h5 {
+            font-size: 15px;
+        }
+    }
+    .card-col-3 {
+        .gap-10 {
+            gap: 0px !important;
+        }
+        .icon-container {
+            background-color: transparent;
+            color: transparent;
+            svg {
+                color: $eighth;
+            }
+        }
     }
 }

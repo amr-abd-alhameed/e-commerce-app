@@ -25,7 +25,9 @@ const Counter = ({ total }) => {
                             -
                         </button>
                     </div>
-                    <div className="d-flex  align-items-center num">{num}</div>
+                    <div className="d-flex justify-content-center align-items-center num">
+                        <span className="d-block">{num}</span>{" "}
+                    </div>
                 </div>
                 <div
                     onClick={() => dispatch(removeFromCard(total))}

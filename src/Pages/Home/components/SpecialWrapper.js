@@ -66,7 +66,7 @@ const SpecialWrapper = () => {
             <section className="SpecialWrapper py-5">
                 <Wrapper className={"g-3"}>
                     <Title text={"special products"} />
-                    <div className="row">
+                    <div className="row g-3">
                         {sectionSpecialData.map((e) => (
                             <SpecialCard
                                 logo1={e.logo1}
