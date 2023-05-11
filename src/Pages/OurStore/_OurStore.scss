@@ -61,4 +61,15 @@
 }
 
 @media (max-width: $desktop) {
+    .storeWrapper {
+        .gr-4 {
+            width: 31.5%;
+        }
+        .gr-3 {
+            width: 23.1%;
+        }
+        .gr-6 {
+            width: 48.4%;
+        }
+    }
 }

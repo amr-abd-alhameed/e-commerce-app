@@ -29,19 +29,19 @@ const SearchingArea = () => {
                                     onClick={() => setGrid(3)}
                                     src={logo4}
                                     alt="grid"
-                                    className="d-block img-fluid"
+                                    className="d-lg-block d-none img-fluid"
                                 />
                                 <img
                                     onClick={() => setGrid(4)}
                                     src={logo3}
                                     alt="grid"
-                                    className="d-block img-fluid"
+                                    className="d-md-block d-none  img-fluid"
                                 />
                                 <img
                                     onClick={() => setGrid(6)}
                                     src={logo2}
                                     alt="grid"
-                                    className="d-block img-fluid"
+                                    className="d-sm-block d-none img-fluid"
                                 />
                                 <img
                                     onClick={() => setGrid(12)}
