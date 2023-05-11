@@ -31,7 +31,7 @@ export const ButtonTwo = ({ name, total, e, style }) => {
     // const id = param.id;
     // console.log(id);
     const navigate = useNavigate();
-
+    console.log(total.id);
     const handleItem = (product) => {
         dispatch(removeItem(product));
         dispatch(addItem(product));
