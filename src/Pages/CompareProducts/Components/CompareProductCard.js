@@ -2,7 +2,7 @@ import React from "react";
 import Colors from "./Colors";
 import logo from "../../../assets/images/cross.svg";
 import { useDispatch } from "react-redux";
-import { removeFromCard } from "../../../Redux/Features/wishListSlice";
+import { removeItem } from "../../../Redux/Features/CartSlice";
 const CompareProductCard = ({ logo1, text2, text1, type, num, total }) => {
     const dispatch = useDispatch();
     return (
@@ -13,7 +13,7 @@ const CompareProductCard = ({ logo1, text2, text1, type, num, total }) => {
                         className="cross position-absolute img-fluid"
                         src={logo}
                         alt="cross"
-                        onClick={() => dispatch(removeFromCard(total))}
+                        onClick={() => dispatch(removeItem(total))}
                     />
                     <div className="productCardImage">
                         <img src={logo1} alt="" />

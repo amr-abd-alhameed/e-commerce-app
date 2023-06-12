@@ -7,7 +7,7 @@ import WishListCard from "./WishListCard";
 import "./_wishList.scss";
 
 const WishList = () => {
-    const selector = useSelector((state) => state.wishCard.cards);
+    const selector = useSelector((state) => state.allCart.cart);
     return (
         <>
             <Meta Title={"WishList Page"} />

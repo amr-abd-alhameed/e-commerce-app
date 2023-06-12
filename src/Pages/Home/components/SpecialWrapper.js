@@ -2,10 +2,7 @@ import React from "react";
 import Title from "../../../Components/commonComponents/Title";
 import Wrapper from "../../../Components/commonComponents/Wrapper";
 import SpecialCard from "./SpecialCard";
-import logo1 from "../../../assets/images/watch.jpg";
-import { useDispatch } from "react-redux";
-import { addToCard } from "../../../Redux/Features/wishListSlice";
-import shortid from "shortid";
+
 import { sectionSpecialData } from "../../../Components/commonComponents/Data";
 
 const SpecialWrapper = () => {

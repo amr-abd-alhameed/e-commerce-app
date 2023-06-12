@@ -1,15 +1,13 @@
 import React from "react";
-import { addToCard } from "../../Redux/Features/wishListSlice";
 import { useDispatch } from "react-redux";
-import shortid from "shortid";
 import { addItem, removeItem } from "../../Redux/Features/itemSlice";
-import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { addToCart } from "../../Redux/Features/CartSlice";
 
 const Button = ({ name, style, e, total, classS }) => {
     const dispatch = useDispatch();
     const handleToCard = (product) => {
-        dispatch(addToCard(product));
+        dispatch(addToCart(product));
     };
     return (
         <>
@@ -31,7 +29,6 @@ export const ButtonTwo = ({ name, total, e, style }) => {
     // const id = param.id;
     // console.log(id);
     const navigate = useNavigate();
-    console.log(total.id);
     const handleItem = (product) => {
         dispatch(removeItem(product));
         dispatch(addItem(product));

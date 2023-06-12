@@ -19,7 +19,7 @@ const SimpleCard = () => {
     const props = { width: 600, height: 500, zoomWidth: 500, img: `${logo4}` };
 
     const [order, setOrder] = useState(true);
-    const selector = useSelector((state) => state.wishCard.cards);
+    const selector = useSelector((state) => state.allCart.cart);
     const param = useParams();
     const itemId = param.itemId;
     console.log(itemId);

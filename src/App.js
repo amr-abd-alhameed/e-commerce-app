@@ -19,32 +19,27 @@ import Shopping from "./Pages/ShoppingCard/Shopping";
 function App() {
     return (
         <>
-            <>
-                <Router>
-                    <Header />
-                    <Routes>
-                        {/* <Route path="/" element={<LayOut />}> */}
-                        <Route index element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/store" element={<OurStore />} />
-                        <Route
-                            path="/compareProducts"
-                            element={<CompareProducts />}
-                        />
-                        <Route path="/login" element={<LogIn />} />
-                        <Route path="/logout" element={<LogOut />} />
-                        <Route path="/wishlist" element={<WishList />} />
-                        <Route
-                            path="/simple/:itemId"
-                            element={<SimpleCard />}
-                        />
-                        <Route path="/shoppingCard" element={<Shopping />} />
-                        {/* </Route> */}
-                    </Routes>
-                    <Footer />
-                </Router>
-            </>
+            <Router>
+                <Header />
+                <Routes>
+                    {/* <Route path="/" element={<LayOut />}> */}
+                    <Route path="/e-commerce-app/" index element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/store" element={<OurStore />} />
+                    <Route
+                        path="/compareProducts"
+                        element={<CompareProducts />}
+                    />
+                    <Route path="/login" element={<LogIn />} />
+                    <Route path="/logout" element={<LogOut />} />
+                    <Route path="/wishlist" element={<WishList />} />
+                    <Route path="/simple" element={<SimpleCard />} />
+                    <Route path="/shoppingCard" element={<Shopping />} />
+                    {/* </Route> */}
+                </Routes>
+                <Footer />
+            </Router>
         </>
     );
 }

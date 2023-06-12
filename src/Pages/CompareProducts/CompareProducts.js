@@ -6,7 +6,7 @@ import Wrapper from "../../Components/commonComponents/Wrapper";
 import CompareProductCard from "./Components/CompareProductCard";
 import { useSelector } from "react-redux";
 const CompareProducts = () => {
-    const selector = useSelector((state) => state.wishCard.cards);
+    const selector = useSelector((state) => state.allCart.cart);
 
     return (
         <>

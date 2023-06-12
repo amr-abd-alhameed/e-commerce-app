@@ -2,8 +2,6 @@ import React from "react";
 import ReactStars from "react-rating-stars-component";
 import Button, { ButtonTwo } from "../../../Components/commonComponents/Button";
 import { useDispatch } from "react-redux";
-import { decrement, increment } from "../../../Redux/Features/wishListSlice";
-import { useParams } from "react-router-dom";
 
 const SpecialCard = ({
     col,
@@ -19,9 +17,7 @@ const SpecialCard = ({
     total,
 }) => {
     const dispatch = useDispatch();
-    // const param = useParams();
-    // const itemId = param.itemId;
-    // console.log(itemId);
+
     return (
         <>
             <div className={col}>

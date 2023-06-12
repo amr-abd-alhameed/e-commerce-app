@@ -7,7 +7,7 @@ const Logo = () => {
                 <h2>
                     <Link
                         className="text-white text-uppercase logoHeader"
-                        to={"/"}
+                        to={"/e-commerce-app"}
                     >
                         dev Amr.
                     </Link>
