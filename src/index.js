@@ -3,13 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import { Provider } from "react-redux";
-import { store } from "./Redux/Store";
-
+import { persistor, store } from "./Redux/Store";
+import { PersistGate } from "redux-persist/integration/react";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
     <Provider store={store}>
-        <App />
+        <PersistGate persistor={persistor}>
+            {" "}
+            <App />
+        </PersistGate>
     </Provider>
 );
