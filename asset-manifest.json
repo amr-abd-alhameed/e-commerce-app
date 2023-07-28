@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/e-commerce-app/static/css/main.a62bf54b.css",
-    "main.js": "/e-commerce-app/static/js/main.b3a154b5.js",
+    "main.css": "/e-commerce-app/static/css/main.806f3ae6.css",
+    "main.js": "/e-commerce-app/static/js/main.ab9771a5.js",
     "static/media/main-banner-1.jpg": "/e-commerce-app/static/media/main-banner-1.e4ca3797700ec9ea33e5.jpg",
     "static/media/alexunder-hess-bWZAPKm0zZE-unsplash.jpg": "/e-commerce-app/static/media/alexunder-hess-bWZAPKm0zZE-unsplash.914135b83d66db3d0a9d.jpg",
     "static/media/alexunder-hess-6zqd6092B1c-unsplash.jpg": "/e-commerce-app/static/media/alexunder-hess-6zqd6092B1c-unsplash.a5bdefbab3fbd1c14c68.jpg",
@@ -15,10 +15,10 @@
     "static/media/catbanner-01.jpg": "/e-commerce-app/static/media/catbanner-01.0f874d6509da88fbc26b.jpg",
     "static/media/menu.svg": "/e-commerce-app/static/media/menu.0fd9209b0e37744ccd2a6bbe7be97bd1.svg",
     "static/media/cart.svg": "/e-commerce-app/static/media/cart.abfdf752dc482f1a9627d3f76562131d.svg",
-    "index.html": "/e-commerce-app/index.html",
     "static/media/compare.svg": "/e-commerce-app/static/media/compare.1c839d87cb27f1e45f1a3bc4a9e300ea.svg",
     "static/media/view.svg": "/e-commerce-app/static/media/view.656dca615fdc5fb084c5199c18eeb24a.svg",
     "static/media/wish.svg": "/e-commerce-app/static/media/wish.417da1a5c71c1c516af8c35a335efa66.svg",
+    "index.html": "/e-commerce-app/index.html",
     "static/media/gr4.svg": "/e-commerce-app/static/media/gr4.d9968d3bbd52ea1f4335bf10ffd74d82.svg",
     "static/media/prodcompare.svg": "/e-commerce-app/static/media/prodcompare.2bbfd340c94177fd1223af04956c03dc.svg",
     "static/media/gr3.svg": "/e-commerce-app/static/media/gr3.f994466928633d05f70a6751593d4cf2.svg",
@@ -28,11 +28,11 @@
     "static/media/gr2.svg": "/e-commerce-app/static/media/gr2.19b02679192d97b6a02011e413a93a65.svg",
     "static/media/user.svg": "/e-commerce-app/static/media/user.cd86e0566bbf017c8167249084d368e3.svg",
     "static/media/cross.svg": "/e-commerce-app/static/media/cross.bf9c2c127cb9cecabfe621ba624f3814.svg",
-    "main.a62bf54b.css.map": "/e-commerce-app/static/css/main.a62bf54b.css.map",
-    "main.b3a154b5.js.map": "/e-commerce-app/static/js/main.b3a154b5.js.map"
+    "main.806f3ae6.css.map": "/e-commerce-app/static/css/main.806f3ae6.css.map",
+    "main.ab9771a5.js.map": "/e-commerce-app/static/js/main.ab9771a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a62bf54b.css",
-    "static/js/main.b3a154b5.js"
+    "static/css/main.806f3ae6.css",
+    "static/js/main.ab9771a5.js"
   ]
 }
