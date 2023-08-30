@@ -24,6 +24,7 @@ function App() {
                 <Routes>
                     {/* <Route path="/" element={<LayOut />}> */}
                     <Route path="/e-commerce-app/" index element={<Home />} />
+
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/store" element={<OurStore />} />
@@ -36,7 +37,6 @@ function App() {
                     <Route path="/wishlist" element={<WishList />} />
                     <Route path="/simple" element={<SimpleCard />} />
                     <Route path="/shoppingCard" element={<Shopping />} />
-                    {/* </Route> */}
                 </Routes>
                 <Footer />
             </Router>

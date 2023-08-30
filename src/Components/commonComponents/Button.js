@@ -30,9 +30,9 @@ export const ButtonTwo = ({ name, total, e, style }) => {
     // console.log(id);
     const navigate = useNavigate();
     const handleItem = (product) => {
-        dispatch(removeItem(product));
+        // dispatch(removeItem(product));
         dispatch(addItem(product));
-        navigate(`/simple/ ${total.id}`);
+        // navigate(`/simple/ ${total.id}`);
     };
     return (
         <>
